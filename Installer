@@ -1,0 +1,36 @@
+=======================================================================
+
+GenoVault Installer
+
+=======================================================================
+
+Install Java 1.8 or above
+Install MySQL Server 5.6.33 or above
+	$ sudo apt update
+	$ sudo apt install mysql-server
+	$ sudo mysql_secure_installation
+Download MySql dump
+Import the default database
+  $ mysql -u root -p
+	mysql> CREATE DATABASE genovaultdb;
+	$ mysql -u root -p < genovault.sql;
+Set environment variables.
+ 	$ mkdir -p $HOME/genovault/upload
+	$ mkdir -p $HOME/genovault/download
+	$ cat >> .bashrc <<EOF 
+	export GENOVAULT=$HOME/genovault
+Web Based Client:
+Download Widfly 10.x server
+Extract 
+	tar -xvf Widfly 10.x
+Copy Genome-1.jar Jar file from GenoVaul_Jar's folder into the Wildfly deployment folder.	
+    cp Genome-1.jar ~/wildfly/standalone/deployments/
+Change the Database server hostname and port as per user setting.
+By default admin user is created for ADMIN module (password admin). Change the password once logged in and create appropriate users for GenoVault module
+Standalone Client:
+Copy the fdt.jar from the Standalone directory to the destination directory
+Run fdt Jar on the Server from the 
+	java -jar fdt.jar
+Copy the Standalone client jar that is GenovaultFX-1.jar
+Run GenovaultFX-1.jar from the Client machine
+       java -jar GenovaultFX-1.jar
