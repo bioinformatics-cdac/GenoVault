@@ -1,0 +1,96 @@
+#########################################################################################
+#											#
+#	GenoVault - Cloud Based Genomic Respository using Cloud Platform		#
+#	version 1.0.0									#
+#											#
+#########################################################################################
+
+1. GenoVault version 1.0.0 Overview
+-----------------------------------
+GenoVault is a cloud-based central repository for storage and retrieval of genomic data generated in 
+various research labs in the various organizations. The solution is delivered in the form of a software suite called “GenoVault”, which is a cloud-based genomic repository that  enables quick archival and retrieval tools along with analytical engines. GenoVault is a Genomics Repository based on OpenStack cloud. It exploits and utilize the full advantage of Cloud Computing viz, distributed computing and storage. Users can upload the genomics sequence data onto the Cloud using Web or JavaFX based interface of GenoVault along with metadata which will be stored in a distributed manner on the cloud. This feature enables swift and efficient retrieval of the data. This centralized repository would be of enormous importance for healthcare.
+
+2. End User License Agreement (EULA)
+-------------------------------------
+By installing/using GenoVault version 1.0.0, you agree with the terms stated in the EULA and you are
+ consenting to be bound by the agreement. You agree that your use of the software acknowledges that
+you have read the license, understood it and agree to be bound by its terms and conditions. If you
+do not agree to all of the terms of the agreement, do not use the software and uninstall the software
+from your computer.
+
+
+3. Licensing
+--------------
+   * GenoVault application modules are licensed by their respective providers and you need to agree to 
+     licenses appropriately before linking them with GenoVault Web-Interface or GenoVault StandAlone Client.
+   * GenoVault StandAlone client application modules are licensed by their respective providers and you need to agree to 
+     licenses appropriately before linking them with GenoVault StandAlone Client.
+
+4.  Installation
+-----------------
+
+Please refer installation_guide for installation of the portal in GenoVault.
+
+
+5.  Application Structure for openstack-based GenoVault
+--------------------------------------------------
+
+									-------------------------
+									|			|	
+								________|Object Storage Node 1	|	
+							      /		|			|	
+							     /		-------------------------
+							    /	
+							   /
+							  /				-------------------------
+	=================		=================/				|			|
+	| Application 	|		|		|  				|Object Storage Node 2	|
+	|  Server	|---------------|Controller Node|_______________________________|			|
+	|		|		| 		|				-------------------------
+	=================		=================\
+							  \
+							   \ 		-------------------------
+							    \		|			|	
+							     ___________|Object Storage Node 3 	|	
+									|			|	
+									-------------------------
+
+	Application Server: This is the node where the GenoVault Portal is deployed. 
+	Controller Node: This is the node where the Cloud Entry point.
+	Object Storage Nodes : These are nodes where the container will be created.
+	Note : All the nodes, except Application Server, are a part of OpenStack Cloud.
+
+6. Pre-requisites
+-----------------
+ * Must:
+   - Java 1.8 or above (https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+   - MySQL 5 or above (http://www.mysql.com/)
+   - OpenStack Cloud Setup (https://www.openstack.org/software/)
+   - Swift based Object Storage Setup (https://www.openstack.org/software/)
+   - Wildfly 10.x server   (http://wildfly.org)
+  
+
+7. Get Started
+--------------
+Default Portal Access URL : http://<Application server>:8080/Genome-1 
+Default "admin" user is created for ADMIN module (password -   ). 
+Change the pasword once logged in, and create appropriate application users though ADMIN interface. 
+
+
+8. Tested On
+--------------
+Operating Systems : 
+ 	           Ubuntu 
+
+Browser: (Requires javascript enabled) 
+	Internet Explorer 12, Mozilla Firefox 76.0,Google Chrome 
+
+
+
+10. Disclaimer
+---------------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT 
+LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NONINFRINGEMENT. 
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
