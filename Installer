@@ -1,25 +1,33 @@
 =======================================================================
 
-GenoVault Installer
+# GenoVault "A Cloud Based Genomic Repository"
 
 =======================================================================
 
-Install Java 1.8 or above
-Install MySQL Server 5.6.33 or above
-	$ sudo apt update
-	$ sudo apt install mysql-server
-	$ sudo mysql_secure_installation
-Download MySql dump
-Import the default database
-  $ mysql -u root -p
-	mysql> CREATE DATABASE genovaultdb;
-	$ mysql -u root -p < genovault.sql;
-Set environment variables.
- 	$ mkdir -p $HOME/genovault/upload
-	$ mkdir -p $HOME/genovault/download
-	$ cat >> .bashrc <<EOF 
-	export GENOVAULT=$HOME/genovault
-Web Based Client:
+# GenoVault  Installer
+
+# JDK  
+        Install Java 1.8 or above
+# MySQl 
+        Install MySQL Server 5.6.33 or above
+	        $ sudo apt update
+	        $ sudo apt install mysql-server
+	        $ sudo mysql_secure_installation
+# Download GenoVault Database MySql dump
+<br/>
+Google Drive link for the mysql data [ Click here ](https://drive.google.com/file/d/18XeirSKyFxMwrVz_o_2RVT0gxlEZeCor/view?usp=sharing)
+
+# Import the default database
+         $ mysql -u root -p
+	        mysql> CREATE DATABASE genovaultdb;
+	        $ mysql -u root -p < genovault.sql;
+        Set environment variables.
+ 	        $ mkdir -p $HOME/genovault/upload
+	        $ mkdir -p $HOME/genovault/download
+	        $ cat >> .bashrc <<EOF 
+	                export GENOVAULT=$HOME/genovault
+                        
+# Web Based Client:
 Download Widfly 10.x server
 Extract 
 	tar -xvf Widfly 10.x
