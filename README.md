@@ -1,8 +1,8 @@
-# H-BAT
+# GenoVault
 
-## Hydrogen Bond Analysis Tool for Molecular Simulation Trajectories
+## GenoVault "A Cloud Based Genomics Repository"
 
-H-BAT is a Big Data analytics tool to analyze the Hydrogen bonds in the molecular simulation trajectories. The available tools perform the same analysis but they fail with large trajectories with water or are unable to handle multiple trajectories simultaneously. This tool is scalable and portable on any distributed computing platform and can find out Hydrogen bonds between all types of residues including water. A Nearest neighbor algorithm is used to boost the performance of the tool in terms of h-bond calculations.
+GenoVault is a cloud-based central repository for storage and retrieval of genomic data generated in various research labs in the various organizations. The solution is delivered in the form of a software suite called “GenoVault”, which is a cloud-based genomic repository that  enables quick archival and retrieval tools along with analytical engines. GenoVault is a Genomics Repository based on OpenStack cloud. It exploits and utilize the full advantage of Cloud Computing viz, distributed computing and storage. Users can upload the genomics sequence data onto the Cloud using Web or JavaFX based interface of GenoVault along with metadata which will be stored in a distributed manner on the cloud. This feature enables swift and efficient retrieval of the data. This centralized repository would be of enormous importance for healthcare.
 
 **Key Features:**
 * Easy analysis of Big data as it is stored on Hadoop file system
@@ -120,8 +120,7 @@ The [command](#command) and [command options](#command-options) are already desc
 
 1. GenoVault version 1.0.0 Overview
 -----------------------------------
-GenoVault is a cloud-based central repository for storage and retrieval of genomic data generated in 
-various research labs in the various organizations. The solution is delivered in the form of a software suite called “GenoVault”, which is a cloud-based genomic repository that  enables quick archival and retrieval tools along with analytical engines. GenoVault is a Genomics Repository based on OpenStack cloud. It exploits and utilize the full advantage of Cloud Computing viz, distributed computing and storage. Users can upload the genomics sequence data onto the Cloud using Web or JavaFX based interface of GenoVault along with metadata which will be stored in a distributed manner on the cloud. This feature enables swift and efficient retrieval of the data. This centralized repository would be of enormous importance for healthcare.
+GenoVault is a cloud-based central repository for storage and retrieval of genomic data generated in various research labs in the various organizations. The solution is delivered in the form of a software suite called “GenoVault”, which is a cloud-based genomic repository that  enables quick archival and retrieval tools along with analytical engines. GenoVault is a Genomics Repository based on OpenStack cloud. It exploits and utilize the full advantage of Cloud Computing viz, distributed computing and storage. Users can upload the genomics sequence data onto the Cloud using Web or JavaFX based interface of GenoVault along with metadata which will be stored in a distributed manner on the cloud. This feature enables swift and efficient retrieval of the data. This centralized repository would be of enormous importance for healthcare.
 
 2. End User License Agreement (EULA)
 -------------------------------------
