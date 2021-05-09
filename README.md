@@ -5,18 +5,18 @@
 GenoVault is a cloud-based central repository for storage and retrieval of genomic data generated in various research labs in the various organizations. The solution is delivered in the form of a software suite called “GenoVault”, which is a cloud-based genomic repository that  enables quick archival and retrieval tools along with analytical engines. GenoVault is a Genomics Repository based on OpenStack cloud. It exploits and utilize the full advantage of Cloud Computing viz, distributed computing and storage. Users can upload the genomics sequence data onto the Cloud using Web or JavaFX based interface of GenoVault along with metadata which will be stored in a distributed manner on the cloud. This feature enables swift and efficient retrieval of the data. This centralized repository would be of enormous importance for healthcare.
 
 **Key Features:**
-* Easy analysis of Big data as it is stored on Hadoop file system
-* Fault tolerant and fast parallel processing of distributed data
-* Support for both in-memory and on-disk data operations
-* Scalable and portable on any distributed computing platform
-* Nearest Neighbor approach used to optimize performance
-* Hydrogen bonds between all types of residues including water-water interaction is possible
-* It can analyse PDB, AMBER and GROMACS trajectories
-* Hydrogen Bond parameters like Bond distance and angle are configurable 
+* Web-based user-friendly interface
+* Standalone Desktop Client
+* Capable of transferring files of sizes > 50GB
+* Every user has their own area for upload or download of data
+* Data is stored into the Cloud as Object
+* The Object will be stored in a distributed manner across swift nodes
+* Distribruted storage enables efficient retrieval of the genomics data 
+
 
 ## Sample Input Data
 
-Sample Input data is provided here for Amber and Gromacs type of trajectories.
+Sample Input data is provided here.
 <br/>
 Google Drive link for the sample input data [ Click here ](https://drive.google.com/drive/u/2/folders/1vzk3w4xARlkqogL3pzBIwwAA5sKCQv4d)
 
