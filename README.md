@@ -30,11 +30,16 @@ Using the deployed WAR and Jar file, the tool can be as web client over the inte
 ### Pre-requisites
 -----------------
  * Must:
-   - Java 1.8 or above (https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
-   - MySQL 5 or above (http://www.mysql.com/)
-   - OpenStack Cloud Setup (https://www.openstack.org/software/)
-   - Swift based Object Storage Setup (https://www.openstack.org/software/)
-   - Wildfly 10.x server   (http://wildfly.org)
+ 
+   - Java 1.8 or above [Click here](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+   
+   - MySQL 5 or above [Click here](http://www.mysql.com/)
+   
+   - OpenStack Cloud Setup [Click here](https://www.openstack.org/software/)
+   
+   - Swift based Object Storage Setup [Click here](https://www.openstack.org/software/)
+   
+   - Wildfly 10.x server [Click here](http://wildfly.org)
 
 ### Application Structure for openstack-based GenoVault
 --------------------------------------------------
