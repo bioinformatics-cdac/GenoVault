@@ -77,7 +77,10 @@ JDK
 		
 # Download GenoVault Database MySql dump
 <br/>
-Google Drive link for the mysql data [Click here](https://drive.google.com/drive/folders/1kckwURF27LeSuDLAGFa8BDmbzY8G0uyC?usp=sharing)
+Google Drive link for the mysql data [Click here](https://drive.google.com/drive/folders/1GsbIS9WaNdBFKU0xfAE1v-KLY-d6FwjA?usp=sharinginch)
+
+
+[Click here](https://drive.google.com/drive/folders/1kckwURF27LeSuDLAGFa8BDmbzY8G0uyC?usp=sharing)
 
 # Import the default database
          $ mysql -u root -p
