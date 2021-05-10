@@ -35,12 +35,99 @@ Using the deployed WAR and Jar file, the tool can be as web client over the inte
    - OpenStack Cloud Setup (https://www.openstack.org/software/)
    - Swift based Object Storage Setup (https://www.openstack.org/software/)
    - Wildfly 10.x server   (http://wildfly.org)
-   
-### 1. Server Side
-Genovault 
-### 1. Stand-alone Usage
 
-HBAT tool can be executed on a stand-alone desktop machine on which JAVA is installed. Below is the command line usage for the JAVA jar file.
+### Application Structure for openstack-based GenoVault
+--------------------------------------------------
+
+									-------------------------
+									|			|	
+								________|Object Storage Node 1	|	
+							      /		|			|	
+							     /		-------------------------
+							    /	
+							   /
+							  /				-------------------------
+	=================		=================/				|			|
+	| Application 	|		|		|  				|Object Storage Node 2	|
+	|  Server	|---------------|Controller Node|_______________________________|			|
+	|		|		| 		|				-------------------------
+	=================		=================\
+							  \
+							   \ 		-------------------------
+							    \		|			|	
+							     ___________|Object Storage Node 3 	|	
+									|			|	
+									-------------------------
+
+	Application Server: This is the node where the GenoVault Portal is deployed. 
+	Controller Node: This is the node where the Cloud Entry point.
+	Object Storage Nodes : These are nodes where the container will be created.
+	Note : All the nodes, except Application Server, are a part of OpenStack Cloud.
+   
+#### Server Side
+
+
+JDK  
+        Install Java 1.8 or above
+# MySQl 
+        Install MySQL Server 5.6.33 or above
+	        $ sudo apt update
+	        $ sudo apt install mysql-server
+	        $ sudo mysql_secure_installation
+# Download GenoVault Database MySql dump
+<br/>
+Google Drive link for the mysql data [ Click here ](https://drive.google.com/file/d/18XeirSKyFxMwrVz_o_2RVT0gxlEZeCor/view?usp=sharing)
+
+# Import the default database
+         $ mysql -u root -p
+	        mysql> CREATE DATABASE genovaultdb;
+	        $ mysql -u root -p < genovault.sql;
+        Set environment variables.
+ 	        $ mkdir -p $HOME/genovault/upload
+	        $ mkdir -p $HOME/genovault/download
+	        $ cat >> .bashrc <<EOF 
+	                export GENOVAULT=$HOME/genovault
+                        
+# Web Based Client:
+Download Widfly 10.x server
+Extract 
+	tar -xvf Widfly 10.x
+Copy Genome-1.jar Jar file from GenoVaul_Jar's folder into the Wildfly deployment folder.	
+    cp Genome-1.jar ~/wildfly/standalone/deployments/
+Change the Database server hostname and port as per user setting.
+By default admin user is created for ADMIN module (password admin). Change the password once logged in and create appropriate users for GenoVault module
+Standalone Client:
+Copy the fdt.jar from the Standalone directory to the destination directory
+Run fdt Jar on the Server from the 
+	java -jar fdt.jar
+Copy the Standalone client jar that is GenovaultFX-1.jar
+Run GenovaultFX-1.jar from the Client machine
+       java -jar GenovaultFX-1.jar
+
+
+### Web Client
+### Standalone Client
+#### Server Side
+Genovault Standalone Client is enable to transfer the very large files of the user to the Server. To run server downlod the jar file.
+
+Google Drive link for the Standalone server and client [Click here](https://drive.google.com/drive/folders/1jT7DjxNpL2UbEF2Ds7n2-haJimtQPw9A?usp=sharing)
+
+```bash
+
+java -jar <JAR file path> [command] [command options]
+
+```
+Example for execution:
+
+```bash
+
+java -jar fdt.jar
+
+```
+
+### Stand-alone Usage
+
+GenoVault tool can be executed on a stand-alone desktop machine on which JAVA is installed. Below is the command line usage for the JAVA jar file.
 
 
 ```bash
@@ -53,7 +140,7 @@ Example for execution:
 
 ```bash
 
-java -jar <JAR file path> hbat -f <filter file path> -i <input file path> -o <output path> -l --pdb
+java -jar GenovaultFX.jar
 
 ```
 
