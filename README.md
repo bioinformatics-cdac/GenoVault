@@ -77,7 +77,7 @@ JDK
 		
 # Download GenoVault Database MySql dump
 <br/>
-Google Drive link for the mysql data [ Click here ](https://drive.google.com/drive/folders/1kckwURF27LeSuDLAGFa8BDmbzY8G0uyC?usp=sharing)
+Google Drive link for the mysql data [Click here](https://drive.google.com/drive/folders/1kckwURF27LeSuDLAGFa8BDmbzY8G0uyC?usp=sharing)
 
 # Import the default database
          $ mysql -u root -p
@@ -101,7 +101,7 @@ Extract
 ```
 # Download GenoVault WAR file
 <br/>
-Google Drive link for the mysql data [ Click here ](https://drive.google.com/drive/folders/1o9v002Lhw7uXhP0f4qUMvXYHG_sxxQUe?usp=sharing)
+Google Drive link for the mysql data [Click here](https://drive.google.com/drive/folders/1o9v002Lhw7uXhP0f4qUMvXYHG_sxxQUe?usp=sharing)
 
 Copy Genome-1.jar Jar file from GenoVaul_Jar's folder into the Wildfly deployment folder.	
 
@@ -112,7 +112,10 @@ Change the Database server hostname and port as per user setting.
 
 #### Get Started
 
-Default Portal Access URL : http://<Application server>:8080/Genome-1 
+Default Portal Access URL : 
+```bash
+http://<Application server>:8080/Genome-1 
+```
 
 By default admin user is created for ADMIN module (password admin). Change the password once logged in and create appropriate users for GenoVault module.
 
