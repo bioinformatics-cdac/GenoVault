@@ -11,20 +11,33 @@ GenoVault is a cloud-based central repository for storage and retrieval of genom
 * Every user has their own area for upload or download of data
 * Data is stored into the Cloud as Object
 * The Object will be stored in a distributed manner across swift nodes
-* Distribruted storage enables efficient retrieval of the genomics data 
+* Distribruted storage enables efficient retrieval of the genomics data
+* Solution is capable of scaling vertically and horizontally 
 
 
 ## Sample Input Data
 
 Sample Input data is provided here.
 <br/>
-Google Drive link for the sample input data [ Click here ](https://drive.google.com/drive/u/2/folders/1vzk3w4xARlkqogL3pzBIwwAA5sKCQv4d)
+Google Drive link for the sample input data [Click here](https://drive.google.com/drive/folders/1GsbIS9WaNdBFKU0xfAE1v-KLY-d6FwjA?usp=sharinginch)
 
 
 ## Usage
+Using the deployed WAR and Jar file, the tool can be as web client over the internet and executed on any stand-alone desktop machine. Upload the genomics file over the Cloud with n number of the object's nodes.Following is the way to install and execute it.
 
-Using the deployed jar file for the tool it can be executed on any stand-alone desktop machine or a big data cluster with n number of nodes.Following is the way to execute it.
+## Installation
 
+### Pre-requisites
+-----------------
+ * Must:
+   - Java 1.8 or above (https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+   - MySQL 5 or above (http://www.mysql.com/)
+   - OpenStack Cloud Setup (https://www.openstack.org/software/)
+   - Swift based Object Storage Setup (https://www.openstack.org/software/)
+   - Wildfly 10.x server   (http://wildfly.org)
+   
+### 1. Server Side
+Genovault 
 ### 1. Stand-alone Usage
 
 HBAT tool can be executed on a stand-alone desktop machine on which JAVA is installed. Below is the command line usage for the JAVA jar file.
