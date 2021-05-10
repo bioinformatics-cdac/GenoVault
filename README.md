@@ -68,7 +68,10 @@ Using the deployed WAR and Jar file, the tool can be as web client over the inte
 
 
 JDK  
-        Install Java 1.8 or above
+        Install Java 1.8 or above [Click here](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+	
+	
+	
 # MySQl 
         Install MySQL Server 5.6.33 or above
 	        $ sudo apt update
@@ -77,7 +80,6 @@ JDK
 		
 # Download GenoVault Database MySql dump
 <br/>
-
 
 
 Google Drive link for the mysql data [Click here](https://drive.google.com/drive/folders/1kckwURF27LeSuDLAGFa8BDmbzY8G0uyC?usp=sharing) 
@@ -97,7 +99,7 @@ Google Drive link for the mysql data [Click here](https://drive.google.com/drive
 
 Download Widfly 10.x server
 
-Wildfly 10.x server   (http://wildfly.org)
+Wildfly 10.x server [Click here](http://wildfly.org)
 
 Extract 
 ```bash
