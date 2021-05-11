@@ -2,7 +2,7 @@
 
 ## GenoVault "A Cloud Based Genomics Repository"
 
-GenoVault is a cloud-based central repository for storage and retrieval of genomic data generated in various research labs in the various organizations. The solution is delivered in the form of a software suite called “GenoVault”, which is a cloud-based genomic repository that  enables quick archival and retrieval tools along with analytical engines. GenoVault is a Genomics Repository based on OpenStack cloud. It exploits and utilize the full advantage of Cloud Computing viz, distributed computing and storage. Users can upload the genomics sequence data onto the Cloud using Web or JavaFX based interface of GenoVault along with metadata which will be stored in a distributed manner on the cloud. This feature enables swift and efficient retrieval of the data. This centralized repository would be of enormous importance for healthcare.
+GenoVault is a private cloud-based central repository for storage and retrieval of genomics data generated in various research labs in various organizations. The solution is delivered in the form of a software suite called “GenoVault”, that enables quick archival and retrieval of data along with analytical support. GenoVault is based on OpenStack cloud. It exploits and utilize the full advantage of Cloud Computing viz, distributed computing and object storage. Users can upload the genomics sequence data onto the Cloud using Web or JavaFX based standalone interface along with metadata which is stored in the form of distributed objects on the cloud. This feature enables swift and efficient retrieval and storage of the genomics data. This centralized repository would be of enormous importance for genomics research labs.
 
 **Key Features:**
 * Web-based user-friendly interface
@@ -77,7 +77,7 @@ JDK
 	
 	
 	
-# MySQl 
+# MySQL
         Install MySQL Server 5.6.33 or above
 	        $ sudo apt update
 	        $ sudo apt install mysql-server
