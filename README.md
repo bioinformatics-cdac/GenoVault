@@ -87,7 +87,7 @@ JDK
 <br/>
 
 
-Google Drive link for the mysql data [Click here](https://drive.google.com/drive/folders/1kckwURF27LeSuDLAGFa8BDmbzY8G0uyC?usp=sharing) 
+Link for the mysql data [Click here](https://drive.google.com/drive/folders/1kckwURF27LeSuDLAGFa8BDmbzY8G0uyC?usp=sharing) 
 
 
 # Import the default database
@@ -113,7 +113,7 @@ Extract
 # Download GenoVault WAR file
 <br/>
 
-Google Drive link for the mysql data [Click here](https://drive.google.com/drive/folders/1o9v002Lhw7uXhP0f4qUMvXYHG_sxxQUe?usp=sharing)
+Link for the GenoVault war file [Click here](https://drive.google.com/drive/folders/1o9v002Lhw7uXhP0f4qUMvXYHG_sxxQUe?usp=sharing)
 
 
 Copy Genome-1.jar Jar file from GenoVaul_Jar's folder into the Wildfly deployment folder.	
@@ -139,7 +139,7 @@ By default admin user is created for ADMIN module (password admin). Change the p
 Genovault Standalone Client is enable to transfer the very large files of the user to the Server. To run server downlod the jar file.
 
 
-Google Drive link for the Standalone server and client [Click here](https://drive.google.com/drive/folders/1jT7DjxNpL2UbEF2Ds7n2-haJimtQPw9A?usp=sharing)
+Link for the Standalone server and client [Click here](https://drive.google.com/drive/folders/1jT7DjxNpL2UbEF2Ds7n2-haJimtQPw9A?usp=sharing)
 
 
 Copy the fdt.jar from the Standalone directory to the destination directory
