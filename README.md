@@ -19,7 +19,7 @@ GenoVault is a private cloud-based central repository for storage and retrieval 
 
 Sample Input data is provided here.
 <br/>
-Google Drive link for the sample input data [Click here](https://drive.google.com/drive/folders/1GsbIS9WaNdBFKU0xfAE1v-KLY-d6FwjA?usp=sharinginch)
+Link for the sample input data download [Click here](https://drive.google.com/drive/folders/1GsbIS9WaNdBFKU0xfAE1v-KLY-d6FwjA?usp=sharinginch)
 
 
 ## Usage
